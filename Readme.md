@@ -18,10 +18,9 @@ they goes under :
 
 -------
 
-
-![alt text](https://i.ibb.co/N6FMwSd/68747470733a2f2f63646e2d696d616765732d322e6d656469756d2e636f6d2f6d61782f3830302f312a30704e33424e5458.png)
+[![68747470733a2f2f63646e2d696d616765732d322e6d656469756d2e636f6d2f6d61782f3830302f312a30704e33424e5458.png](https://i.postimg.cc/s2PzqvkH/68747470733a2f2f63646e2d696d616765732d322e6d656469756d2e636f6d2f6d61782f3830302f312a30704e33424e5458.png)](https://postimg.cc/2q5gB88n)
 
 ---------
 
-![alt text](https://i.ibb.co/BcHS05W/Screen-Recording-2022-06-21-at-11-31-35-PM.gif)
+[![Screen-Recording-2022-06-21-at-11-31-35-PM.gif](https://i.postimg.cc/XYzBqDX6/Screen-Recording-2022-06-21-at-11-31-35-PM.gif)](https://postimg.cc/nXqhw2v3)
 
