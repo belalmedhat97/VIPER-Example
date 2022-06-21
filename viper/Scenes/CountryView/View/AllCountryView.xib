@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryVC" customModule="viper" customModuleProvider="target">
+            <connections>
+                <outlet property="CountiresPicker" destination="Bj4-U1-CnL" id="lgF-Qx-YR5"/>
+                <outlet property="countryFlag" destination="XI7-JU-SJB" id="fQo-Y6-6Zf"/>
+                <outlet property="getCountriesBtn" destination="dAY-l8-Cq0" id="2Y6-IO-vyH"/>
+                <outlet property="loadIndicator" destination="w1G-Xe-CwA" id="FdG-Ty-GJf"/>
+                <outlet property="pickerViewOL" destination="Bj4-U1-CnL" id="vRQ-K7-FPt"/>
+                <outlet property="view" destination="uzS-ya-LfY" id="hUZ-lE-0ib"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uzS-ya-LfY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAY-l8-Cq0">
+                    <rect key="frame" x="20" y="492.5" width="374" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Njl-12-trE"/>
+                    </constraints>
+                    <color key="tintColor" red="0.054901960780000002" green="0.043137254899999998" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Get Countries"/>
+                    <connections>
+                        <action selector="getAllCountires:" destination="-1" eventType="touchUpInside" id="Dor-fQ-q0E"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bj4-U1-CnL">
+                    <rect key="frame" x="0.0" y="593" width="414" height="269"/>
+                </pickerView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XI7-JU-SJB">
+                    <rect key="frame" x="20" y="64" width="374" height="408.5"/>
+                    <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="w1G-Xe-CwA">
+                    <rect key="frame" x="169.5" y="227.5" width="75" height="81.5"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9I8-tk-LOe"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XI7-JU-SJB" firstAttribute="leading" secondItem="9I8-tk-LOe" secondAttribute="leading" constant="20" id="0PF-vh-lVp"/>
+                <constraint firstItem="w1G-Xe-CwA" firstAttribute="centerY" secondItem="XI7-JU-SJB" secondAttribute="centerY" id="3eQ-jy-5Cu"/>
+                <constraint firstItem="9I8-tk-LOe" firstAttribute="trailing" secondItem="XI7-JU-SJB" secondAttribute="trailing" constant="20" id="62q-Sx-hOG"/>
+                <constraint firstItem="Bj4-U1-CnL" firstAttribute="height" secondItem="uzS-ya-LfY" secondAttribute="height" multiplier="0.3" id="86r-D3-S3m"/>
+                <constraint firstItem="9I8-tk-LOe" firstAttribute="bottom" secondItem="Bj4-U1-CnL" secondAttribute="bottom" id="Auw-g1-5b2"/>
+                <constraint firstItem="Bj4-U1-CnL" firstAttribute="leading" secondItem="uzS-ya-LfY" secondAttribute="leading" id="QaN-q0-6rs"/>
+                <constraint firstItem="dAY-l8-Cq0" firstAttribute="leading" secondItem="9I8-tk-LOe" secondAttribute="leading" constant="20" id="Sel-iO-C0J"/>
+                <constraint firstItem="9I8-tk-LOe" firstAttribute="trailing" secondItem="dAY-l8-Cq0" secondAttribute="trailing" constant="20" id="WaU-5R-eYI"/>
+                <constraint firstItem="w1G-Xe-CwA" firstAttribute="centerX" secondItem="XI7-JU-SJB" secondAttribute="centerX" id="aUZ-hM-9hk"/>
+                <constraint firstItem="9I8-tk-LOe" firstAttribute="trailing" secondItem="Bj4-U1-CnL" secondAttribute="trailing" id="faY-Ao-iaH"/>
+                <constraint firstItem="dAY-l8-Cq0" firstAttribute="centerX" secondItem="Bj4-U1-CnL" secondAttribute="centerX" id="i07-Ye-S0f"/>
+                <constraint firstItem="XI7-JU-SJB" firstAttribute="top" secondItem="9I8-tk-LOe" secondAttribute="top" constant="20" id="vSC-m8-UKS"/>
+                <constraint firstItem="dAY-l8-Cq0" firstAttribute="top" secondItem="XI7-JU-SJB" secondAttribute="bottom" constant="20" id="wDH-Ay-Krj"/>
+                <constraint firstItem="w1G-Xe-CwA" firstAttribute="width" secondItem="XI7-JU-SJB" secondAttribute="width" multiplier="0.2" id="yHg-yF-EVH"/>
+                <constraint firstItem="w1G-Xe-CwA" firstAttribute="height" secondItem="XI7-JU-SJB" secondAttribute="height" multiplier="0.2" id="z3s-TP-aqq"/>
+                <constraint firstItem="Bj4-U1-CnL" firstAttribute="top" secondItem="dAY-l8-Cq0" secondAttribute="bottom" constant="50.5" id="zLE-Ri-gNa"/>
+            </constraints>
+            <point key="canvasLocation" x="-65.217391304347828" y="-585.26785714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
